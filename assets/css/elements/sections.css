@@ -95,19 +95,26 @@ h6 {
     line-height: 1.5;
 }
 
-.botao-detalhes {
+/* Configuração dos Botões */
+
+.btn-detalhes, .btn-adicionar {
     color: #6c757d;
-    border-color: #6c757d;
+    border: none;
     background-color: transparent;
     border-radius: 6px;
     padding: 8px 15px;
     font-size: 14px;
     text-decoration: none;
     display: inline-block;
+    cursor: pointer;
 }
 
-.botao-detalhes:hover {
+.btn-detalhes:hover, .btn-adicionar:hover {
     color: #fff;
     background-color: #6c757d;
     border-color: #6c757d;
+}
+
+.btn-detalhes:active, .btn-adicionar:active {
+    transform: translateY(1px);
 }

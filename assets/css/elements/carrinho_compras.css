@@ -1,0 +1,93 @@
+/* Container fixo no rodapé da tela */
+#container-carrinho-flutuante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+}
+
+/* Barra Principal Flutuante */
+.carrinho-bar {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carrinho-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-carrinho-acao {
+    background: white;
+    color: #28a745;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Painel de Detalhes do Pedido */
+.carrinho-detalhes {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px 8px 0 0;
+    padding: 15px;
+    margin-bottom: 5px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
+    color: #333;
+}
+
+.carrinho-detalhes.esconde {
+    display: none;
+}
+
+.lista-itens-carrinho {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.lista-itens-carrinho li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.btn-finalizar {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-qtd.btn-adicionar-item, .btn-qtd.btn-remover-item {
+    background-color: rgb(179, 67, 67);
+    width: 20px;
+    height: 20px;
+    border: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 5px;
+}

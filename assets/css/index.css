@@ -15,6 +15,7 @@
     @import url('./elements/navbar.css');
     @import url('./elements/footer.css');
     @import url('./elements/sections.css');
+    @import url('./elements/carrinho_compras.css');
 
 /* Seletor universal para zerar margens e alinhar o box-sizing */
 * {
