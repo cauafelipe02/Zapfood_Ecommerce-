@@ -1,0 +1,113 @@
+/* =========================================
+        Estilos das Sessões de Itens
+   ========================================= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--crimson);
+    font-weight: 600;
+}
+
+.sessao-pratos, .sessao-restaurantes {
+    padding: 20px 0;
+    background-color: transparent;
+}
+
+.sessao-pratos {
+    padding-top: 80px;
+}
+
+.sessao-restaurantes {
+    padding-bottom: 80px;
+}
+
+.agrupamento-principal {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-secao {
+    color: var(--primary);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.linha-itens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 0px 40px;
+    justify-content: flex-start;
+}
+
+.coluna-item {
+    flex: 1 1 250px;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.card-item {
+    max-width: 350px;
+    box-sizing: border-box;
+
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;          /* Mantém a proporção e corta o excesso para preencher o espaço */
+    object-position: center;    /* Centraliza o foco do corte na imagem */
+    border-radius: 6px;         /* Arredonda as pontas da imagem diretamente */
+    margin-bottom: 10px;        /* Espaçamento para o texto logo abaixo */
+    display: block;             /* Remove espaços fantasmas indesejados abaixo da imagem */
+}
+
+.dados-item {
+    text-align: left;
+}
+
+.dados-item .titulo-item {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #343a40;
+}
+
+.dados-item .descricao-item {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.botao-detalhes {
+    color: #6c757d;
+    border-color: #6c757d;
+    background-color: transparent;
+    border-radius: 6px;
+    padding: 8px 15px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.botao-detalhes:hover {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}

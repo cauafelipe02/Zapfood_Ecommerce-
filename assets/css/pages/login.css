@@ -1,0 +1,132 @@
+
+.body-login{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    background-color: #98c7e6;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    will-change: background;
+
+    background-image: url('/assets/images/fundo_login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.788);
+    padding: 35px 50px 30px 50px;
+    border-radius: 15px;
+}
+
+/*Labels:*/
+.container-label, .container-label-2{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    gap: 5px;
+}
+
+.container-label-3{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container-label label,
+.container-label-3 label,
+.container-label-2 label{
+    font-size: 16px;
+    font-weight: 600;
+    color: #525151;
+}
+
+/*Labels input e p*/
+.container-label input,
+.container-label-2 input{
+    width: 100%;
+    height: 35px;
+    padding: 0px 10px;
+    border: 1px solid #b6b2b2;
+    outline: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.container-label-3 p{
+    margin: 0;
+    font-size: 15px;
+}
+
+input.cliente,
+input.restaurante{
+    width: 14px;
+    margin-right: 5px;
+    margin-left: 10px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+label[for="cliente"], label[for="restaurante"]{
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.titulo{
+    margin-bottom: 10px;
+    text-align: center;
+    color: #525151;
+}
+
+/*Buttons*/
+button.entrar{
+    align-self: center;
+    width: 150px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #525151;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px 0 20px 0;
+    color: white;
+    text-decoration: none;
+}
+
+button.entrar:hover{
+    background-color: #ec8938;
+}
+
+button.entrar:active{
+    transform: translateY(1px);
+}
+
+/*Esqueceu senha*/
+.esqueceu-senha{
+    align-self: center;
+    color: #525151;
+    margin: 25px 0px 10px 0px;
+}
+
+.esqueceu-senha a{
+    text-decoration: none;
+    color: #3e77ce;
+}
+
+.create-account{
+    align-self: center;
+    text-decoration: none;
+    color: #3e77ce;
+}

@@ -1,0 +1,96 @@
+/* ================================
+          Estilos do Rodapé
+    =============================== */
+    
+.footer-index, .footer-tela-C, .footer-tela-R{
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 20px 0; /* Diminui o padding vertical */
+    font-family: var(--roboto);
+    display: flex;
+}
+
+.container-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+
+}
+
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background-color: var(--primary);
+    margin-bottom: 10px; /* Diminui a margem inferior */
+    margin-right: 40px;
+}
+
+.col-footer h3 {
+    font-size: 1.6em; /* Diminui um pouco o tamanho da fonte do título */
+    font-weight: bold;
+    margin-bottom: 10px; /* Diminui a margem inferior */
+    color: var(--white);
+}
+
+.col-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.col-footer ul li {
+    margin-bottom: 8px; /* Diminui a margem inferior dos itens da lista */
+}
+
+.col-footer ul li a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.97em; /* Diminui um pouco o tamanho da fonte dos links */
+}
+
+.col-footer ul li a:hover {
+    color: var(--secondary);
+}
+
+.col-footer p {
+    line-height: 1.4; /* Diminui um pouco a altura da linha */
+    margin-bottom: 8px; /* Diminui a margem inferior */
+    font-size: 0.97em; /* Diminui um pouco o tamanho da fonte do texto */
+    display: flex;
+    justify-content: center;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    font-size: 0.8em; /* Diminui um pouco o tamanho da fonte do copyright */
+    margin-top: 5px;
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    .col-footer {
+        width: calc(50% - 20px);
+    }
+
+    .col-footer.copyright {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-footer {
+        width: 100%;
+    }
+}
