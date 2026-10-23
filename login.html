@@ -13,35 +13,27 @@
     <main class="main-login">
         <!-- Formulário de login -->
         <form class="form-login" action="">
-            <div class="titulo">
-                <h1>Login</h1>
-            </div>
+            <h1>Login</h1>
+
+            <label for="email">Digite seu e-mail:</label>
+            <input type="email" id="email-login">
+
+            <label for="senha">Digite sua senha:</label>
+            <input type="password" id="senha-login">
 
             <div class="container-label">
-                <label for="email">Digite seu e-mail:</label>
-                <input type="email" id="email">
-            </div>
-
-            <div class="container-label-2">
-                <label for="senha">Digite sua senha:</label>
-                <input type="password" id="senha">
-            </div>
-
-            <div class="container-label-3">
                 <label for="entrar">Entrar como:</label>
-                <input name="tipoUsuario" type="radio" class="cliente" id="cliente">
+                <input name="tipoUsuario" type="radio" class="cliente" id="entrar-cliente">
                 <label for="cliente">Cliente</label>
-                <input name="tipoUsuario" type="radio" class="restaurante" id="restaurante">
+                <input name="tipoUsuario" type="radio" class="restaurante" id="entrar-restaurante">
                 <label for="restaurante">Restaurante</label>
             </div>
 
-            <p class="esqueceu-senha">Esqueceu sua senha? 
-                <a href="#">Clique aqui!</a>
-            </p>
-
-            <button class="entrar" type="submit">Entrar</button>
+            <p class="esqueceu-senha">Esqueceu sua senha? <a href="#">Clique aqui!</a></p>
 
             <a href="./cadastro-C.html" class="create-account">Criar conta</a>
+
+            <button class="entrar" type="submit" id="btn-entrar">Entrar</button>
         </form>
     </main>
     <script type="module" src="./assets/js/index.js"></script>

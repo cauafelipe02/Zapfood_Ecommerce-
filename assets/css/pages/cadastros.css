@@ -61,9 +61,10 @@ main.main-CDcliente, main.main-CDrestaurante {
    ======================= */
 
 form.form-CDcliente, form.form-CDrestaurante {
-    width: 400px;
-    height: 60%;
+    min-width: 400px;
+    height: auto;
     gap: 5px;
+    padding: 20px 0px;
 
     display: flex;
     flex-direction: column;
