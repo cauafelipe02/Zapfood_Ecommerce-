@@ -13,7 +13,7 @@ Este projeto consiste no desenvolvimento de um sistema ecommerce completo de del
 * **Funcionalidades Interativas em JavaScript**
 
 ## 👀 Demonstração do projeto:
-[ link para o vercell ]
+Link: [https://zapfood-ecommerce.vercel.app/]
 
 ![image](https://github.com/user-attachments/assets/601fdbea-1802-4b8c-973c-177e6d87141b)
 
