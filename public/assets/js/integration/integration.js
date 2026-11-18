@@ -46,15 +46,16 @@ document.addEventListener('DOMContentLoaded', () => {
     btnEnviarCliente.addEventListener('click', async (e) => {
       e.preventDefault();
 
-      let genero = 'Outro';
-      if (document.getElementById('masculino-cliente')?.checked) genero = 'Masculino';
-      if (document.getElementById('feminino-cliente')?.checked) genero = 'Feminino';
+      let sexo = 'Outro';
+      if (document.getElementById('masculino-cliente')?.checked) sexo = 'M';
+      if (document.getElementById('feminino-cliente')?.checked) sexo = 'F';
 
       const dadosCliente = {
         nome: document.getElementById('nome-cliente').value,
         email: document.getElementById('email-cliente').value,
         senha: document.getElementById('senha-cliente').value,
         telefone: document.getElementById('telefone-cliente').value,
+        cpf: document.getElementById('cpf-cliente').value, // <-- ADICIONADO AQUI
         sexo: sexo,
         dataNascimento: document.getElementById('dataN-cliente').value,
         estado: document.getElementById('estado-cliente').value,
@@ -120,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // =========================================================================
+// =========================================================================
   // 3. INTEGRAÇÃO: LOGIN COM VALIDAÇÃO DE PERFIL (login.html)
   // =========================================================================
   const btnEntrar = document.getElementById('btn-entrar');
@@ -150,9 +151,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (resposta.ok && resultado.sucesso) {
           localStorage.setItem('usuario_logado', JSON.stringify(resultado.usuario));
+          
+          // Redireciona utilizando exatamente a rota corrigida que veio do server.js
           window.location.href = resultado.redirecionar;
         } else {
-          alert(resultado.mensagem); // Mostra o aviso exato caso o perfil esteja trocado
+          alert(resultado.mensagem);
         }
       } catch (erro) {
         console.error(erro);

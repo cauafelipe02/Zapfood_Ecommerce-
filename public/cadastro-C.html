@@ -18,9 +18,10 @@
                 <h1>Cadastre-se</h1>
 
                 <input type="text" id="nome-cliente" placeholder="Nome Completo:">
-                <input type="email" id="email-cliente" placeholder="Email:">
-                <input type="password" id="senha-cliente" placeholder="Senha">
+                <input type="email" id="email-cliente" placeholder="Email:" autocomplete="off">
+                <input type="password" id="senha-cliente" placeholder="Senha" autocomplete="new-password">
                 <input type="tel" id="telefone-cliente" placeholder="Telefone:">
+                <input type="text" id="cpf-cliente" placeholder="CPF: (SEM CARACTERES - ou .)" maxlength="11">
 
                 <div class="checkbox-group">
                     <p>Sexo:</p><br>
@@ -50,7 +51,6 @@
             <button class="ghost" id="signIn"><a href="./login.html">Entrar</a></button>
         </section>
     </main>
-    <script src="./assets/js/index.js"></script>
     <script src="./assets/js/integration/integration.js"></script>
 </body>
 </html>
